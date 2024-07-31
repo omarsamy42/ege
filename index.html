@@ -79,18 +79,18 @@ span.psw {
 
   <div class="container">
     <label for="uname"><b>Username</b></label>
-    <input type="text" id="uname" placeholder="Enter Username" name="uname" required>
+    <input type="text" id="uname" placeholder="Enter Username" name="uname" required aria-label="Username">
 
     <label for="psw"><b>Password</b></label>
-    <input type="password" id="psw" placeholder="Enter Password" name="psw" required>
+    <input type="password" id="psw" placeholder="Enter Password" name="psw" required aria-label="Password">
         
-    <a href="https://anti-stress.my.canva.site">login</a>
     <label>
       <input type="checkbox" checked="checked" name="remember"> Remember me
     </label>
   </div>
 
   <div class="container" style="background-color:#f1f1f1">
+    <button type="submit">Login</button>
     <button type="button" id="cancelbtn" class="cancelbtn">Cancel</button>
     <span class="psw">Forgot <a href="https://anti-stress.my.canva.site">password?</a></span>
   </div>
@@ -98,7 +98,7 @@ span.psw {
 
 <script>
 document.getElementById('cancelbtn').addEventListener('click', function() {
-  window.location.href = 'https://anti-stress.my.canva.site';
+  window.location.href = 'https://anti-stress.my.canva.site/#home';
 });
 </script>
 
